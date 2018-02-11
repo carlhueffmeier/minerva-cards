@@ -25,7 +25,7 @@ const byId = handleActions(
 
 // Merges state, which is a hash
 function mergePayload(state, action) {
-  return Object({}, state, hashify(action.payload));
+  return Object.assign({}, state, hashify(action.payload));
 }
 
 // item -> { id: item }
