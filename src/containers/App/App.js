@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from './redux';
+import rootReducer from 'state';
 
 const store = createStore(rootReducer);
 
