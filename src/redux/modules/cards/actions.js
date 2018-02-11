@@ -1,8 +1,8 @@
 import { createAction } from 'redux-actions';
 import types from './types';
 
-const addCard = createAction(types.ADD);
+const add = createAction(types.ADD);
 
 export default {
-  addCard
+  add
 };
