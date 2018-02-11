@@ -15,12 +15,19 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": <h1>
-        Minerva Cards
-</h1>,
-      "className": "App",
+      "children": <div
+        className="app"
+>
+        <h1>
+                Minerva Cards
+        </h1>
+        <Route
+                component={[Function]}
+                path="/"
+        />
+</div>,
     },
     "ref": null,
     "rendered": Object {
@@ -28,24 +35,64 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Minerva Cards",
+        "children": Array [
+          <h1>
+            Minerva Cards
+</h1>,
+          <Route
+            component={[Function]}
+            path="/"
+/>,
+        ],
+        "className": "app",
       },
       "ref": null,
-      "rendered": "Minerva Cards",
-      "type": "h1",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Minerva Cards",
+          },
+          "ref": null,
+          "rendered": "Minerva Cards",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": <h1>
-          Minerva Cards
-</h1>,
-        "className": "App",
+        "children": <div
+          className="app"
+>
+          <h1>
+                    Minerva Cards
+          </h1>
+          <Route
+                    component={[Function]}
+                    path="/"
+          />
+</div>,
       },
       "ref": null,
       "rendered": Object {
@@ -53,13 +100,46 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Minerva Cards",
+          "children": Array [
+            <h1>
+              Minerva Cards
+</h1>,
+            <Route
+              component={[Function]}
+              path="/"
+/>,
+          ],
+          "className": "app",
         },
         "ref": null,
-        "rendered": "Minerva Cards",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Minerva Cards",
+            },
+            "ref": null,
+            "rendered": "Minerva Cards",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
