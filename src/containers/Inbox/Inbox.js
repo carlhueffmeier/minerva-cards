@@ -1,11 +1,15 @@
 import React from 'react';
 import { Button } from 'components';
+import { connect } from 'react-redux';
+import { selectors as deckSelectors } from 'state/modules/decks';
+import { NewDeck } from 'components';
+import { Link } from 'react-router-dom';
 
 function goToReview() {
   console.log('changing route');
 }
 
-function Inbox(props) {
+export function Inbox(props) {
   return (
     <div className="App">
       <h1>Inbox</h1>
@@ -21,18 +25,24 @@ function Inbox(props) {
           <a href="#">Inactive Decks</a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a href="#">JavaScript</a>
-        </li>
-        <li>
-          <a href="#">Functional Programming</a>
-        </li>
+      <ul className="deck-list">
+        {props.decks.map(deck => (
+          <li key={deck.id}>
+            <Link to={`/decks/${deck.id}`}>{deck.title}</Link>
+          </li>
+        ))}
       </ul>
+
+      <NewDeck />
 
       <Button onClick={goToReview}>Start Learning</Button>
     </div>
   );
 }
+function mapStateToProps(state, ownProps) {
+  return {
+    decks: deckSelectors.getAllDecks(state)
+  };
+}
 
-export default Inbox;
+export default connect(mapStateToProps, null)(Inbox);

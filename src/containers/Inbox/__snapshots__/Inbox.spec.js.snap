@@ -4,7 +4,16 @@ exports[`Inbox renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Inbox />,
+  Symbol(enzyme.__unrendered__): <Inbox
+    decks={
+        Array [
+            Object {
+              "id": 1,
+              "title": "__TEST__",
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -47,22 +56,19 @@ ShallowWrapper {
                     </a>
           </li>
 </ul>,
-        <ul>
+        <ul
+          className="deck-list"
+>
           <li>
-                    <a
-                              href="#"
+                    <Link
+                              replace={false}
+                              to="/decks/1"
                     >
-                              JavaScript
-                    </a>
-          </li>
-          <li>
-                    <a
-                              href="#"
-                    >
-                              Functional Programming
-                    </a>
+                              __TEST__
+                    </Link>
           </li>
 </ul>,
+        <Connect(NewDeck) />,
         <Button
           onClick={[Function]}
 >
@@ -214,77 +220,57 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
-              <a
-                            href="#"
+              <Link
+                            replace={false}
+                            to="/decks/1"
               >
-                            JavaScript
-              </a>
-</li>,
-            <li>
-              <a
-                            href="#"
-              >
-                            Functional Programming
-              </a>
+                            __TEST__
+              </Link>
 </li>,
           ],
+          "className": "deck-list",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "1",
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                href="#"
+              "children": <Link
+                replace={false}
+                to="/decks/1"
 >
-                JavaScript
-</a>,
+                __TEST__
+</Link>,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": "JavaScript",
-                "href": "#",
+                "children": "__TEST__",
+                "replace": false,
+                "to": "/decks/1",
               },
               "ref": null,
-              "rendered": "JavaScript",
-              "type": "a",
-            },
-            "type": "li",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <a
-                href="#"
->
-                Functional Programming
-</a>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Functional Programming",
-                "href": "#",
-              },
-              "ref": null,
-              "rendered": "Functional Programming",
-              "type": "a",
+              "rendered": "__TEST__",
+              "type": [Function],
             },
             "type": "li",
           },
         ],
         "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -337,22 +323,19 @@ ShallowWrapper {
                         </a>
             </li>
 </ul>,
-          <ul>
+          <ul
+            className="deck-list"
+>
             <li>
-                        <a
-                                    href="#"
+                        <Link
+                                    replace={false}
+                                    to="/decks/1"
                         >
-                                    JavaScript
-                        </a>
-            </li>
-            <li>
-                        <a
-                                    href="#"
-                        >
-                                    Functional Programming
-                        </a>
+                                    __TEST__
+                        </Link>
             </li>
 </ul>,
+          <Connect(NewDeck) />,
           <Button
             onClick={[Function]}
 >
@@ -504,77 +487,57 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                <a
-                                href="#"
+                <Link
+                                replace={false}
+                                to="/decks/1"
                 >
-                                JavaScript
-                </a>
-</li>,
-              <li>
-                <a
-                                href="#"
-                >
-                                Functional Programming
-                </a>
+                                __TEST__
+                </Link>
 </li>,
             ],
+            "className": "deck-list",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "1",
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="#"
+                "children": <Link
+                  replace={false}
+                  to="/decks/1"
 >
-                  JavaScript
-</a>,
+                  __TEST__
+</Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": "JavaScript",
-                  "href": "#",
+                  "children": "__TEST__",
+                  "replace": false,
+                  "to": "/decks/1",
                 },
                 "ref": null,
-                "rendered": "JavaScript",
-                "type": "a",
-              },
-              "type": "li",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <a
-                  href="#"
->
-                  Functional Programming
-</a>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Functional Programming",
-                  "href": "#",
-                },
-                "ref": null,
-                "rendered": "Functional Programming",
-                "type": "a",
+                "rendered": "__TEST__",
+                "type": [Function],
               },
               "type": "li",
             },
           ],
           "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,

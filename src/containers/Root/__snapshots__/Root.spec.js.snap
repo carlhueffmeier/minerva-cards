@@ -25,7 +25,13 @@ ShallowWrapper {
         </h1>
         <Route
                 component={[Function]}
+                exact={true}
                 path="/"
+        />
+        <Route
+                component={[Function]}
+                exact={true}
+                path="/decks/:deckId"
         />
 </div>,
     },
@@ -41,7 +47,13 @@ ShallowWrapper {
 </h1>,
           <Route
             component={[Function]}
+            exact={true}
             path="/"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/decks/:deckId"
 />,
         ],
         "className": "app",
@@ -65,7 +77,21 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
+            "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/decks/:deckId",
           },
           "ref": null,
           "rendered": null,
@@ -90,7 +116,13 @@ ShallowWrapper {
           </h1>
           <Route
                     component={[Function]}
+                    exact={true}
                     path="/"
+          />
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/decks/:deckId"
           />
 </div>,
       },
@@ -106,7 +138,13 @@ ShallowWrapper {
 </h1>,
             <Route
               component={[Function]}
+              exact={true}
               path="/"
+/>,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/decks/:deckId"
 />,
           ],
           "className": "app",
@@ -130,7 +168,21 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "component": [Function],
+              "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/decks/:deckId",
             },
             "ref": null,
             "rendered": null,
