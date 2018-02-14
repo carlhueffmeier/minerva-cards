@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getAllDecks } from 'state/modules/decks';
+import { selectors as deckSelectors } from 'state/modules/decks';
 
-export class DeckSelect {
+export class DeckSelect extends Component {
   state = {
     deckId: this.props.initialSelection || null
   };
@@ -31,6 +31,7 @@ export class DeckSelect {
                 {deck.title}
               </option>
             ))}
+            <option>-- New Deck --</option>
           </select>
         </label>
       </div>
@@ -40,7 +41,7 @@ export class DeckSelect {
 
 function mapStateToProps(state) {
   return {
-    decks: getAllDecks()
+    decks: deckSelectors.getAllDecks(state)
   };
 }
 

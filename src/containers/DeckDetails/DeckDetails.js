@@ -3,16 +3,21 @@ import { connect } from 'react-redux';
 import { selectors as deckSelectors } from 'state/modules/decks';
 
 export class DeckDetails extends Component {
-  goBack() {
+  handleGoBack() {
     this.props.history.goBack();
+  }
+
+  handleAddNote() {
+    this.props.history.push(`/add-note`);
   }
 
   render() {
     const { title } = this.props.deck;
     return (
       <div>
-        <button onClick={this.goBack.bind(this)}>Go back</button>
+        <button onClick={this.handleGoBack.bind(this)}>Go back</button>
         <h2 className="deck-title">{title}</h2>
+        <button onClick={this.handleAddNote.bind(this)}>Add Note</button>
       </div>
     );
   }
@@ -20,7 +25,6 @@ export class DeckDetails extends Component {
 
 function mapStateToProps(state, ownProps) {
   const { deckId } = ownProps.match.params;
-  console.log(deckId);
   return {
     deck: deckSelectors.getDeckById(state, deckId)
   };

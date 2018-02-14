@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import cards from './modules/cards';
+import notes from './modules/notes';
 import decks from './modules/decks';
 
 const rootReducer = combineReducers({
-  cards,
+  notes,
   decks
 });
 
