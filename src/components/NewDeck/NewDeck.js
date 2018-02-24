@@ -16,6 +16,7 @@ export class NewDeck extends Component {
   handleSubmit(event) {
     const newDeckTitle = this.state.deckTitle.trim();
     this.props.addDeck(newDeckTitle);
+    this.setState({ deckTitle: `` });
     event.preventDefault();
   }
 
