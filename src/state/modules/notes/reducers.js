@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions';
 import { combineReducers } from 'redux';
-import { union } from 'ramda';
 import types from './types';
+import { mergePayload, includeInAllIds } from 'state/utils';
 
 // byId slice reducer
 //
@@ -23,31 +23,15 @@ const byId = handleActions(
   {} // initial state
 );
 
-// Merges state, which is a hash
-function mergePayload(state, action) {
-  return Object.assign({}, state, hashify(action.payload));
-}
-
-// item -> { id: item }
-function hashify(item) {
-  return {
-    [item.id]: item
-  };
-}
-
 // allIds slice reducer
 const allIds = handleActions(
   {
-    [types.ADD]: addId
+    [types.ADD]: includeInAllIds
   },
   [] // initial state
 );
 
-function addId(state, action) {
-  return union(state, [action.payload.id]);
-}
-
-// Cards reducer
+// notes reducer
 const reducer = combineReducers({
   byId,
   allIds

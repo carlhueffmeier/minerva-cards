@@ -32,7 +32,7 @@ const allIds = handleActions(
   initialState.allIds
 );
 
-// decks reducer
+// types reducer
 const reducer = combineReducers({
   byId,
   allIds

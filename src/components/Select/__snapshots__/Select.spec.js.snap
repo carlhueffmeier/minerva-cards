@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Select
+    display={[Function]}
+    onChange={[Function]}
+    options={
+        Array [
+            Object {
+              "id": "1",
+              "name": "Default",
+            },
+            Object {
+              "id": "2",
+              "name": "Kanji",
+            },
+          ]
+    }
+    title="Choose Deck"
+    value="2"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label>
+          <span
+                    className="select__title"
+          >
+                    Choose Deck
+          </span>
+          <select
+                    name="type"
+                    onChange={[Function]}
+                    value="2"
+          >
+                    <option
+                              className="select__option"
+                              value="1"
+                    >
+                              Default
+                    </option>
+                    <option
+                              className="select__option"
+                              value="2"
+                    >
+                              Kanji
+                    </option>
+          </select>
+</label>,
+        undefined,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="select__title"
+>
+              Choose Deck
+</span>,
+            <select
+              name="type"
+              onChange={[Function]}
+              value="2"
+>
+              <option
+                            className="select__option"
+                            value="1"
+              >
+                            Default
+              </option>
+              <option
+                            className="select__option"
+                            value="2"
+              >
+                            Kanji
+              </option>
+</select>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Choose Deck",
+              "className": "select__title",
+            },
+            "ref": null,
+            "rendered": "Choose Deck",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  className="select__option"
+                  value="1"
+>
+                  Default
+</option>,
+                <option
+                  className="select__option"
+                  value="2"
+>
+                  Kanji
+</option>,
+              ],
+              "name": "type",
+              "onChange": [Function],
+              "value": "2",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Default",
+                  "className": "select__option",
+                  "value": "1",
+                },
+                "ref": null,
+                "rendered": "Default",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kanji",
+                  "className": "select__option",
+                  "value": "2",
+                },
+                "ref": null,
+                "rendered": "Kanji",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+        ],
+        "type": "label",
+      },
+      undefined,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label>
+            <span
+                        className="select__title"
+            >
+                        Choose Deck
+            </span>
+            <select
+                        name="type"
+                        onChange={[Function]}
+                        value="2"
+            >
+                        <option
+                                    className="select__option"
+                                    value="1"
+                        >
+                                    Default
+                        </option>
+                        <option
+                                    className="select__option"
+                                    value="2"
+                        >
+                                    Kanji
+                        </option>
+            </select>
+</label>,
+          undefined,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="select__title"
+>
+                Choose Deck
+</span>,
+              <select
+                name="type"
+                onChange={[Function]}
+                value="2"
+>
+                <option
+                                className="select__option"
+                                value="1"
+                >
+                                Default
+                </option>
+                <option
+                                className="select__option"
+                                value="2"
+                >
+                                Kanji
+                </option>
+</select>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Choose Deck",
+                "className": "select__title",
+              },
+              "ref": null,
+              "rendered": "Choose Deck",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    className="select__option"
+                    value="1"
+>
+                    Default
+</option>,
+                  <option
+                    className="select__option"
+                    value="2"
+>
+                    Kanji
+</option>,
+                ],
+                "name": "type",
+                "onChange": [Function],
+                "value": "2",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Default",
+                    "className": "select__option",
+                    "value": "1",
+                  },
+                  "ref": null,
+                  "rendered": "Default",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Kanji",
+                    "className": "select__option",
+                    "value": "2",
+                  },
+                  "ref": null,
+                  "rendered": "Kanji",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

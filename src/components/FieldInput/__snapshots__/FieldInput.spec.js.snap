@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldInput renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FieldInput
+    fields={
+        Array [
+            "Kanji",
+            "Reading",
+            "Examples",
+          ]
+    }
+    onFieldChange={[Function]}
+    values={
+        Object {
+            "Examples": "賢い犬だな。",
+            "Kanji": "犬",
+            "Reading": "いぬ",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label>
+          Kanji
+          <input
+                    onChange={[Function]}
+                    value="犬"
+          />
+</label>,
+        <label>
+          Reading
+          <input
+                    onChange={[Function]}
+                    value="いぬ"
+          />
+</label>,
+        <label>
+          Examples
+          <input
+                    onChange={[Function]}
+                    value="賢い犬だな。"
+          />
+</label>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "Kanji",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Kanji",
+            <input
+              onChange={[Function]}
+              value="犬"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Kanji",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "onChange": [Function],
+              "value": "犬",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": "Reading",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Reading",
+            <input
+              onChange={[Function]}
+              value="いぬ"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Reading",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "onChange": [Function],
+              "value": "いぬ",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": "Examples",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Examples",
+            <input
+              onChange={[Function]}
+              value="賢い犬だな。"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Examples",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "onChange": [Function],
+              "value": "賢い犬だな。",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label>
+            Kanji
+            <input
+                        onChange={[Function]}
+                        value="犬"
+            />
+</label>,
+          <label>
+            Reading
+            <input
+                        onChange={[Function]}
+                        value="いぬ"
+            />
+</label>,
+          <label>
+            Examples
+            <input
+                        onChange={[Function]}
+                        value="賢い犬だな。"
+            />
+</label>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "Kanji",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Kanji",
+              <input
+                onChange={[Function]}
+                value="犬"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Kanji",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "onChange": [Function],
+                "value": "犬",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": "Reading",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Reading",
+              <input
+                onChange={[Function]}
+                value="いぬ"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Reading",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "onChange": [Function],
+                "value": "いぬ",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": "Examples",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Examples",
+              <input
+                onChange={[Function]}
+                value="賢い犬だな。"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Examples",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "onChange": [Function],
+                "value": "賢い犬だな。",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

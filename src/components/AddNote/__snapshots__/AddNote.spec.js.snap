@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNote renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AddNote
+    deckId="deck-1"
+    fieldValues={Object {}}
+    onDeckChange={[Function]}
+    onFieldChange={[Function]}
+    onSave={[Function]}
+    onTypeChange={[Function]}
+    typeId="type-1"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <withRouter(BackButtonContainer) />,
+        <form
+          onSubmit={[Function]}
+>
+          <Connect(DeckSelectContainer)
+                    onChange={[Function]}
+                    value="deck-1"
+          />
+          <Connect(TypeSelectContainer)
+                    onChange={[Function]}
+                    value="type-1"
+          />
+          <Connect(FieldInputContainer)
+                    onFieldChange={[Function]}
+                    typeId="type-1"
+                    values={Object {}}
+          />
+          <button
+                    type="submit"
+          >
+                    Save
+          </button>
+</form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Connect(DeckSelectContainer)
+              onChange={[Function]}
+              value="deck-1"
+/>,
+            <Connect(TypeSelectContainer)
+              onChange={[Function]}
+              value="type-1"
+/>,
+            <Connect(FieldInputContainer)
+              onFieldChange={[Function]}
+              typeId="type-1"
+              values={Object {}}
+/>,
+            <button
+              type="submit"
+>
+              Save
+</button>,
+          ],
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onChange": [Function],
+              "value": "deck-1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onChange": [Function],
+              "value": "type-1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onFieldChange": [Function],
+              "typeId": "type-1",
+              "values": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Save",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withRouter(BackButtonContainer) />,
+          <form
+            onSubmit={[Function]}
+>
+            <Connect(DeckSelectContainer)
+                        onChange={[Function]}
+                        value="deck-1"
+            />
+            <Connect(TypeSelectContainer)
+                        onChange={[Function]}
+                        value="type-1"
+            />
+            <Connect(FieldInputContainer)
+                        onFieldChange={[Function]}
+                        typeId="type-1"
+                        values={Object {}}
+            />
+            <button
+                        type="submit"
+            >
+                        Save
+            </button>
+</form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Connect(DeckSelectContainer)
+                onChange={[Function]}
+                value="deck-1"
+/>,
+              <Connect(TypeSelectContainer)
+                onChange={[Function]}
+                value="type-1"
+/>,
+              <Connect(FieldInputContainer)
+                onFieldChange={[Function]}
+                typeId="type-1"
+                values={Object {}}
+/>,
+              <button
+                type="submit"
+>
+                Save
+</button>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChange": [Function],
+                "value": "deck-1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChange": [Function],
+                "value": "type-1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onFieldChange": [Function],
+                "typeId": "type-1",
+                "values": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Save",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

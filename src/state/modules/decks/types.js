@@ -1,4 +1,4 @@
-const ADD = `minerva-cards/cards/ADD`;
+const ADD = `minerva-cards/decks/ADD`;
 
 export default {
   ADD

@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeckDetails renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DeckDetails
+    deck={
+        Object {
+            "id": 1,
+            "title": "Kanji",
+          }
+    }
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    location={
+        Object {
+            "pathname": "/decks/Kanji",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <withRouter(BackButtonContainer) />,
+        <h2
+          className="deck-details__title"
+>
+          Deck: 
+          Kanji
+</h2>,
+        <button
+          onClick={[Function]}
+>
+          Add Note
+</button>,
+        <Connect(CardBrowser)
+          deck={1}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Deck: ",
+            "Kanji",
+          ],
+          "className": "deck-details__title",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Deck: ",
+          "Kanji",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Note",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Add Note",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "deck": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withRouter(BackButtonContainer) />,
+          <h2
+            className="deck-details__title"
+>
+            Deck: 
+            Kanji
+</h2>,
+          <button
+            onClick={[Function]}
+>
+            Add Note
+</button>,
+          <Connect(CardBrowser)
+            deck={1}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Deck: ",
+              "Kanji",
+            ],
+            "className": "deck-details__title",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Deck: ",
+            "Kanji",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Note",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Add Note",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "deck": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
