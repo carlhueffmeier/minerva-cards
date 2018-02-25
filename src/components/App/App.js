@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux';
+import rootSaga from 'state/sagas';
 import { Provider } from 'react-redux';
-import rootReducer from 'state';
 import { Root } from 'components';
+import configureStore from 'store/configureStore';
 
-const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = configureStore();
+store.runSaga(rootSaga);
 
 class App extends Component {
   render() {

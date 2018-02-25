@@ -5,17 +5,17 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardBrowser
-    notes={
+    cards={
         Array [
             Object {
-              "deck": "Kanji",
-              "fields": Object {
-                "Examples": "賢い犬だな。",
-                "Kanji": "犬",
-                "Reading": "いぬ",
-              },
-              "id": "1",
-              "type": "Kanji",
+              "id": "card-1",
+              "note": "note-1",
+              "template": "kanji-production",
+            },
+            Object {
+              "id": "card-2",
+              "note": "note-1",
+              "template": "kanji-reading",
             },
           ]
     }
@@ -42,21 +42,38 @@ ShallowWrapper {
                                 Type
                         </th>
                         <th>
+                                Note
+                        </th>
+                        <th>
+                                Template
+                        </th>
+                        <th>
                                 Data
                         </th>
                 </tr>
         </thead>
         <tbody>
                 <tr>
+                        <td />
+                        <td />
                         <td>
-                                Kanji
+                                note-1
                         </td>
                         <td>
-                                Kanji
+                                kanji-production
+                        </td>
+                        <td />
+                </tr>
+                <tr>
+                        <td />
+                        <td />
+                        <td>
+                                note-1
                         </td>
                         <td>
-                                {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                kanji-reading
                         </td>
+                        <td />
                 </tr>
         </tbody>
 </table>,
@@ -77,21 +94,38 @@ ShallowWrapper {
                                     Type
                         </th>
                         <th>
+                                    Note
+                        </th>
+                        <th>
+                                    Template
+                        </th>
+                        <th>
                                     Data
                         </th>
             </tr>
 </thead>,
           <tbody>
             <tr>
+                        <td />
+                        <td />
                         <td>
-                                    Kanji
+                                    note-1
                         </td>
                         <td>
-                                    Kanji
+                                    kanji-production
+                        </td>
+                        <td />
+            </tr>
+            <tr>
+                        <td />
+                        <td />
+                        <td>
+                                    note-1
                         </td>
                         <td>
-                                    {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                    kanji-reading
                         </td>
+                        <td />
             </tr>
 </tbody>,
         ],
@@ -111,6 +145,12 @@ ShallowWrapper {
                             Type
               </th>
               <th>
+                            Note
+              </th>
+              <th>
+                            Template
+              </th>
+              <th>
                             Data
               </th>
 </tr>,
@@ -127,6 +167,12 @@ ShallowWrapper {
 </th>,
                 <th>
                   Type
+</th>,
+                <th>
+                  Note
+</th>,
+                <th>
+                  Template
 </th>,
                 <th>
                   Data
@@ -162,6 +208,28 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "children": "Note",
+                },
+                "ref": null,
+                "rendered": "Note",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Template",
+                },
+                "ref": null,
+                "rendered": "Template",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
                   "children": "Data",
                 },
                 "ref": null,
@@ -180,15 +248,26 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <tr>
+                <td />
+                <td />
                 <td>
-                                Kanji
+                                note-1
                 </td>
                 <td>
-                                Kanji
+                                kanji-production
+                </td>
+                <td />
+</tr>,
+              <tr>
+                <td />
+                <td />
+                <td>
+                                note-1
                 </td>
                 <td>
-                                {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                kanji-reading
                 </td>
+                <td />
 </tr>,
             ],
           },
@@ -196,19 +275,19 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "1",
+              "key": "card-1",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <td />,
+                  <td />,
                   <td>
-                    Kanji
+                    note-1
 </td>,
                   <td>
-                    Kanji
+                    kanji-production
 </td>,
-                  <td>
-                    {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
-</td>,
+                  <td />,
                 ],
               },
               "ref": null,
@@ -218,10 +297,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Kanji",
+                    "children": undefined,
                   },
                   "ref": null,
-                  "rendered": "Kanji",
+                  "rendered": null,
                   "type": "td",
                 },
                 Object {
@@ -229,10 +308,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Kanji",
+                    "children": undefined,
                   },
                   "ref": null,
-                  "rendered": "Kanji",
+                  "rendered": null,
                   "type": "td",
                 },
                 Object {
@@ -240,10 +319,109 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "{\\"Kanji\\":\\"犬\\",\\"Reading\\":\\"いぬ\\",\\"Examples\\":\\"賢い犬だな。\\"}",
+                    "children": "note-1",
                   },
                   "ref": null,
-                  "rendered": "{\\"Kanji\\":\\"犬\\",\\"Reading\\":\\"いぬ\\",\\"Examples\\":\\"賢い犬だな。\\"}",
+                  "rendered": "note-1",
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "kanji-production",
+                  },
+                  "ref": null,
+                  "rendered": "kanji-production",
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "td",
+                },
+              ],
+              "type": "tr",
+            },
+            Object {
+              "instance": null,
+              "key": "card-2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <td />,
+                  <td />,
+                  <td>
+                    note-1
+</td>,
+                  <td>
+                    kanji-reading
+</td>,
+                  <td />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "note-1",
+                  },
+                  "ref": null,
+                  "rendered": "note-1",
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "kanji-reading",
+                  },
+                  "ref": null,
+                  "rendered": "kanji-reading",
+                  "type": "td",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
                   "type": "td",
                 },
               ],
@@ -273,21 +451,38 @@ ShallowWrapper {
                                         Type
                               </th>
                               <th>
+                                        Note
+                              </th>
+                              <th>
+                                        Template
+                              </th>
+                              <th>
                                         Data
                               </th>
                     </tr>
           </thead>
           <tbody>
                     <tr>
+                              <td />
+                              <td />
                               <td>
-                                        Kanji
+                                        note-1
                               </td>
                               <td>
-                                        Kanji
+                                        kanji-production
+                              </td>
+                              <td />
+                    </tr>
+                    <tr>
+                              <td />
+                              <td />
+                              <td>
+                                        note-1
                               </td>
                               <td>
-                                        {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                        kanji-reading
                               </td>
+                              <td />
                     </tr>
           </tbody>
 </table>,
@@ -308,21 +503,38 @@ ShallowWrapper {
                                           Type
                             </th>
                             <th>
+                                          Note
+                            </th>
+                            <th>
+                                          Template
+                            </th>
+                            <th>
                                           Data
                             </th>
               </tr>
 </thead>,
             <tbody>
               <tr>
+                            <td />
+                            <td />
                             <td>
-                                          Kanji
+                                          note-1
                             </td>
                             <td>
-                                          Kanji
+                                          kanji-production
+                            </td>
+                            <td />
+              </tr>
+              <tr>
+                            <td />
+                            <td />
+                            <td>
+                                          note-1
                             </td>
                             <td>
-                                          {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                          kanji-reading
                             </td>
+                            <td />
               </tr>
 </tbody>,
           ],
@@ -342,6 +554,12 @@ ShallowWrapper {
                                 Type
                 </th>
                 <th>
+                                Note
+                </th>
+                <th>
+                                Template
+                </th>
+                <th>
                                 Data
                 </th>
 </tr>,
@@ -358,6 +576,12 @@ ShallowWrapper {
 </th>,
                   <th>
                     Type
+</th>,
+                  <th>
+                    Note
+</th>,
+                  <th>
+                    Template
 </th>,
                   <th>
                     Data
@@ -393,6 +617,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "children": "Note",
+                  },
+                  "ref": null,
+                  "rendered": "Note",
+                  "type": "th",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Template",
+                  },
+                  "ref": null,
+                  "rendered": "Template",
+                  "type": "th",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
                     "children": "Data",
                   },
                   "ref": null,
@@ -411,15 +657,26 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <tr>
+                  <td />
+                  <td />
                   <td>
-                                    Kanji
+                                    note-1
                   </td>
                   <td>
-                                    Kanji
+                                    kanji-production
+                  </td>
+                  <td />
+</tr>,
+                <tr>
+                  <td />
+                  <td />
+                  <td>
+                                    note-1
                   </td>
                   <td>
-                                    {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
+                                    kanji-reading
                   </td>
+                  <td />
 </tr>,
               ],
             },
@@ -427,19 +684,19 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": "1",
+                "key": "card-1",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
+                    <td />,
+                    <td />,
                     <td>
-                      Kanji
+                      note-1
 </td>,
                     <td>
-                      Kanji
+                      kanji-production
 </td>,
-                    <td>
-                      {"Kanji":"犬","Reading":"いぬ","Examples":"賢い犬だな。"}
-</td>,
+                    <td />,
                   ],
                 },
                 "ref": null,
@@ -449,10 +706,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Kanji",
+                      "children": undefined,
                     },
                     "ref": null,
-                    "rendered": "Kanji",
+                    "rendered": null,
                     "type": "td",
                   },
                   Object {
@@ -460,10 +717,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Kanji",
+                      "children": undefined,
                     },
                     "ref": null,
-                    "rendered": "Kanji",
+                    "rendered": null,
                     "type": "td",
                   },
                   Object {
@@ -471,10 +728,109 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "{\\"Kanji\\":\\"犬\\",\\"Reading\\":\\"いぬ\\",\\"Examples\\":\\"賢い犬だな。\\"}",
+                      "children": "note-1",
                     },
                     "ref": null,
-                    "rendered": "{\\"Kanji\\":\\"犬\\",\\"Reading\\":\\"いぬ\\",\\"Examples\\":\\"賢い犬だな。\\"}",
+                    "rendered": "note-1",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "kanji-production",
+                    },
+                    "ref": null,
+                    "rendered": "kanji-production",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                ],
+                "type": "tr",
+              },
+              Object {
+                "instance": null,
+                "key": "card-2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <td />,
+                    <td />,
+                    <td>
+                      note-1
+</td>,
+                    <td>
+                      kanji-reading
+</td>,
+                    <td />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "note-1",
+                    },
+                    "ref": null,
+                    "rendered": "note-1",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "kanji-reading",
+                    },
+                    "ref": null,
+                    "rendered": "kanji-reading",
+                    "type": "td",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
                     "type": "td",
                   },
                 ],

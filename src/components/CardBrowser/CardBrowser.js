@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const noteType = PropTypes.shape({
+const cardType = PropTypes.shape({
   id: PropTypes.string.isRequired,
-  deck: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
+  note: PropTypes.string.isRequired,
+  template: PropTypes.string.isRequired
+  // deck: PropTypes.string.isRequired,
+  // type: PropTypes.string.isRequired,
 });
 
 CardBrowser.propTypes = {
-  notes: PropTypes.arrayOf(noteType).isRequired
+  cards: PropTypes.arrayOf(cardType).isRequired
 };
 
 function CardBrowser(props) {
@@ -19,15 +21,19 @@ function CardBrowser(props) {
           <tr>
             <th>Deck</th>
             <th>Type</th>
+            <th>Note</th>
+            <th>Template</th>
             <th>Data</th>
           </tr>
         </thead>
         <tbody>
-          {props.notes.map(note => (
-            <tr key={note.id}>
-              <td>{note.deck}</td>
-              <td>{note.type}</td>
-              <td>{JSON.stringify(note.fields)}</td>
+          {props.cards.map(card => (
+            <tr key={card.id}>
+              <td>{card.deck}</td>
+              <td>{card.type}</td>
+              <td>{card.note}</td>
+              <td>{card.template}</td>
+              <td>{JSON.stringify(card.fields)}</td>
             </tr>
           ))}
         </tbody>

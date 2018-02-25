@@ -4,16 +4,16 @@ import CardBrowser from './CardBrowser';
 
 describe('CardBrowser', () => {
   const props = {
-    notes: [
+    cards: [
       {
-        id: `1`,
-        deck: `Kanji`,
-        type: `Kanji`,
-        fields: {
-          Kanji: `犬`,
-          Reading: `いぬ`,
-          Examples: `賢い犬だな。`
-        }
+        id: `card-1`,
+        note: `note-1`,
+        template: `kanji-production`
+      },
+      {
+        id: `card-2`,
+        note: `note-1`,
+        template: `kanji-reading`
       }
     ]
   };
