@@ -43,6 +43,11 @@ ShallowWrapper {
                 exact={true}
                 path="/notes/add-note"
         />
+        <Route
+                component={[Function]}
+                exact={true}
+                path="/review"
+        />
 </div>,
     },
     "ref": null,
@@ -74,6 +79,11 @@ ShallowWrapper {
             component={[Function]}
             exact={true}
             path="/notes/add-note"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/review"
 />,
         ],
         "className": "app",
@@ -143,6 +153,19 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/review",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "div",
     },
@@ -180,6 +203,11 @@ ShallowWrapper {
                     exact={true}
                     path="/notes/add-note"
           />
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/review"
+          />
 </div>,
       },
       "ref": null,
@@ -211,6 +239,11 @@ ShallowWrapper {
               component={[Function]}
               exact={true}
               path="/notes/add-note"
+/>,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/review"
 />,
           ],
           "className": "app",
@@ -275,6 +308,19 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/notes/add-note",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/review",
             },
             "ref": null,
             "rendered": null,

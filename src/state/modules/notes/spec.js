@@ -1,26 +1,44 @@
 import reducer from './reducers';
 import operations from './operations';
+import initialState from './initialState';
+import { getFromEnd } from 'utils/common';
 
 describe(`notes module`, () => {
-  const note = { deck: 1 };
+  const initAction = { type: '@@INIT' };
+  const mockNote = {
+    id: `note-1`,
+    deck: `kanji`,
+    type: `kanji`
+  };
 
-  it(`correctly adds id to allIds when using addNote`, () => {
-    const action = operations.addNote(note);
-    const nextState = reducer(undefined, action);
-    expect(nextState.allIds.length).toEqual(1);
+  it(`is initialized with initial state`, () => {
+    const state = reducer(undefined, initAction);
+    expect(state).toEqual(initialState);
   });
 
-  it(`correctly adds item to byId hash when using addNote`, () => {
-    const action = operations.addNote(note);
-    const nextState = reducer(undefined, action);
-    const id = nextState.allIds[0];
-    expect(nextState.byId[id]).toEqual({ id, ...note });
+  it(`adds new id to allIds when using addNote`, () => {
+    let state = reducer(undefined, initAction);
+    const addAction = operations.addNote(mockNote);
+    state = reducer(state, addAction);
+    expect(state.allIds.length).toEqual(initialState.allIds.length + 1);
   });
 
-  it(`does create unique ids for each new note`, () => {
-    const action = operations.addNote(note);
-    const initialState = reducer(undefined, action);
-    const nextState = reducer(initialState, action);
-    expect(nextState.allIds[0]).not.toEqual(nextState.allIds[1]);
+  it(`adds item to byId hash when using addNote`, () => {
+    let state = reducer(undefined, initAction);
+    const addAction = operations.addNote(mockNote);
+    state = reducer(state, addAction);
+    const idOfItemAddedLast = getFromEnd(state.allIds);
+    expect(state.byId[idOfItemAddedLast]).toEqual({
+      id: idOfItemAddedLast,
+      ...mockNote
+    });
+  });
+
+  it(`creates unique ids for each new note`, () => {
+    let state = reducer(undefined, initAction);
+    const addAction = operations.addNote(mockNote);
+    state = reducer(state, addAction);
+    state = reducer(state, addAction);
+    expect(getFromEnd(state.allIds)).not.toEqual(getFromEnd(state.allIds, 2));
   });
 });

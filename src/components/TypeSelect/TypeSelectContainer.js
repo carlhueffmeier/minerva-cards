@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectors as typeSelectors } from 'state/modules/types';
-import { Select } from 'components';
+import Select from 'components/Select';
 
 function TypeSelectContainer(props) {
   return (

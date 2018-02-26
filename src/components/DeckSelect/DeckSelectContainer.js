@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectors as deckSelectors } from 'state/modules/decks';
-import { Select } from 'components';
+import Select from 'components/Select';
 
 function DeckSelectContainer(props) {
   return (

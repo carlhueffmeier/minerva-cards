@@ -4,16 +4,18 @@ import CardBrowser from './CardBrowser';
 
 describe('CardBrowser', () => {
   const props = {
-    cards: [
+    rows: [
       {
         id: `card-1`,
-        note: `note-1`,
-        template: `kanji-production`
+        deck: `Kanji`,
+        template: `Kanji (Production)`,
+        type: `Kanji (Production + Reading)`
       },
       {
         id: `card-2`,
-        note: `note-1`,
-        template: `kanji-reading`
+        deck: `Kanji`,
+        template: `Kanji (Reading)`,
+        type: `Kanji (Production + Reading)`
       }
     ]
   };

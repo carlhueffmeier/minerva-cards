@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Inbox } from './Inbox';
+import Inbox from './Inbox';
 
 describe('Inbox', () => {
   const props = {

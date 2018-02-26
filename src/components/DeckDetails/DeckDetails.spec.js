@@ -1,14 +1,3 @@
-// This line in `DeckDetails.js` causes the test to fail:
-//
-// import { CardBrowser, BackButton } from 'components';
-//
-// The `index.js` file exports the `DeckDetailsContainer` component as
-// `DeckDetails`. For some undetermined reason this import is triggered,
-// which results in an invariant violation.
-//
-// My understanding of `import` mechanics seems to be lacking.
-// Further investigation required.
-
 import React from 'react';
 import { shallow } from 'enzyme';
 import DeckDetails from './DeckDetails';

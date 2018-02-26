@@ -1,1 +1,1 @@
-export { default } from './Inbox';
+export { default } from './InboxContainer';

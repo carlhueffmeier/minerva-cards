@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DeckSelect, TypeSelect, FieldInput, BackButton } from 'components';
+import DeckSelect from 'components/DeckSelect';
+import TypeSelect from 'components/TypeSelect';
+import FieldInput from 'components/FieldInput';
+import BackButton from 'components/BackButton';
 
 AddNote.propTypes = {
   onSave: PropTypes.func.isRequired,

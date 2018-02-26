@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Inbox, DeckDetails, AddNote } from 'components';
+import Inbox from 'components/Inbox';
+import DeckDetails from 'components/DeckDetails';
+import AddNote from 'components/AddNote';
+import Review from 'components/Review';
 
 function Root(props) {
   return (
@@ -11,6 +14,7 @@ function Root(props) {
         <Route exact path="/decks/:deckId" component={DeckDetails} />
         <Route exact path="/decks/:deckId/add-note" component={AddNote} />
         <Route exact path="/notes/add-note" component={AddNote} />
+        <Route exact path="/review" component={Review} />
       </div>
     </Router>
   );

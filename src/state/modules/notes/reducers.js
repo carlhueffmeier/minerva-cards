@@ -1,5 +1,6 @@
 import { handleActions } from 'redux-actions';
 import { combineReducers } from 'redux';
+import initialState from './initialState';
 import types from './types';
 import { mergePayload, includeInAllIds } from 'state/utils';
 
@@ -20,7 +21,7 @@ const byId = handleActions(
   {
     [types.ADD]: mergePayload
   },
-  {} // initial state
+  initialState.byId
 );
 
 // allIds slice reducer
@@ -28,7 +29,7 @@ const allIds = handleActions(
   {
     [types.ADD]: includeInAllIds
   },
-  [] // initial state
+  initialState.allIds
 );
 
 // notes reducer
